@@ -19,7 +19,7 @@
     //SELECT puxando nome e senha da tabela usuarios
     $sql = "SELECT * FROM usuarios
             WHERE usuario = '{$usuario}'
-            AND senha = '".md5($senha)."'";
+            AND senha = '{$senha}'";
 
     $res = $conn->query($sql) or die($conn->error);
 
